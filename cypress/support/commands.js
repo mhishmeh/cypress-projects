@@ -30,3 +30,7 @@ Cypress.Commands.add('clickCard', (link) => {
    Cypress.on('uncaught:exception', (err, runnable) => {
     return false;
   });
+
+Cypress.Commands.add('login', (email, name) => {
+  cy.get('input[type="email"]').type('gmail.com')
+})
